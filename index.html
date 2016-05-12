@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="Heatmap.js"></script>
+
+</head>
+
+<body>
+
+<svg id='chart'></svg>
+
+<script>
+
+var myHeatmap = Heatmap();
+myHeatmap.setSelector('#chart');
+myHeatmap.setFileName("dummydata.tsv");
+myHeatmap.setDefaultcolor("#CCCCCC");
+myHeatmap.setXLabels(['HI', 'MOM', 'SUP']);
+myHeatmap.setYLabels(['HI', 'MOM', 'SUP']);
+
+myHeatmap.setDimensions(300, 300);
+myHeatmap.setFieldNames('HI', 'MOM', 'SUP');
+myHeatmap.build();
+
+
+
+</script>
+
+</body>
+
+</html>
