@@ -15,13 +15,13 @@
 
 var myHeatmap = Heatmap();
 myHeatmap.setSelector('#chart');
-myHeatmap.setFileName("dummydata.tsv");
+myHeatmap.setFileName("data.tsv");
 myHeatmap.setDefaultcolor("#CCCCCC");
-myHeatmap.setXLabels(['HI', 'MOM', 'SUP']);
-myHeatmap.setYLabels(['HI', 'MOM', 'SUP']);
+myHeatmap.setXLabels(['day', 'hour', 'value']);
+myHeatmap.setYLabels(['day', 'hour', 'value']);
 
 myHeatmap.setDimensions(300, 300);
-myHeatmap.setFieldNames('HI', 'MOM', 'SUP');
+myHeatmap.setFieldNames('day', 'hour', 'value');
 myHeatmap.build();
 
 
